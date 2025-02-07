@@ -1,33 +1,83 @@
-// Fonction pour initialiser le radar chart
 function initRadarChart() {
     const ctx = document.getElementById('radarChart').getContext('2d');
-    const data = {
-        labels: ['HTML', 'CSS', 'JavaScript', 'React', 'Python', 'SQL'], // Les compétences à afficher
-        datasets: [{
-            label: 'Mes compétences',
-            data: [80, 80, 70, 50, 60, 75], // Les valeurs de compétences
-            backgroundColor: 'rgba(63, 81, 181, 0.2)',
-            borderColor: 'rgba(63, 81, 181, 1)',
-            borderWidth: 1
-        }]
-    };
 
-    const options = {
+    // Création du radar chart avec Chart.js
+    new Chart(ctx, config);
+}
+
+// Couleur de ligne par dataset
+function getLineColor(ctx) {
+    return Utils.color(ctx.datasetIndex);
+}
+
+// Alterner les styles des points
+function alternatePointStyles(ctx) {
+    const index = ctx.dataIndex;
+    return index % 2 === 0 ? 'circle' : 'rect';
+}
+// Modifier l’opacité des éléments : Diminue l’opacité de la couleur de ligne.
+function makeHalfAsOpaque(ctx) {
+    return Utils.transparentize(getLineColor(ctx));
+}
+// Modifier l’opacité des éléments : Rend la couleur 20% opaque (ajoute de la transparence).
+function make20PercentOpaque(ctx) {
+    return Utils.transparentize(getLineColor(ctx), 0.8);
+}
+// Ajuster le rayon des points en fonction des valeurs
+function adjustRadiusBasedOnData(ctx) {
+    const v = ctx.parsed.y;
+    return v < 10 ? 5
+        : v < 25 ? 7
+            : v < 50 ? 9
+                : v < 75 ? 11
+                    : 15;
+}
+
+const data = {
+    labels: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'React', 'Angular', 'Swift', 'R', 'Python', 'SQL', 'Java', 'Smalltalk'],
+    datasets: [{
+        label: "Mes compétences",
+        data: [80, 80, 70, 60, 40, 40, 20, 50, 60, 75, 60, 50], // Valeurs de compétences
+        backgroundColor: 'rgba(63, 81, 181, 0.2)',
+        borderColor: 'rgba(63, 81, 181, 1)',
+        borderWidth: 1
+    }]
+};
+
+const config = {
+    type: 'radar',
+    data: data,
+    options: {
         responsive: true,
-        scale: {
-            ticks: {
-                beginAtZero: true,
-                max: 100
+        plugins: {
+            legend: false,
+            tooltip: {
+                enabled: true, // Active l'affichage des tooltips
+                callbacks: {
+                    label: function (context) {
+                        const label = context.chart.data.labels[context.dataIndex]; // Récupère le nom de la compétence
+                        const value = context.raw; // Récupère la valeur associée
+                        return `${value}`; // Affiche "Nom de la compétence: Valeur"
+                    }
+                }
+            }
+        },
+        elements: {
+            line: {
+                backgroundColor: make20PercentOpaque,
+                borderColor: getLineColor,
+            },
+            point: {
+                backgroundColor: getLineColor,
+                hoverBackgroundColor: makeHalfAsOpaque,
+                radius: adjustRadiusBasedOnData,
+                pointStyle: alternatePointStyles,
+                hoverRadius: 15,
             }
         }
-    };
+    }
+};
 
-    const radarChart = new Chart(ctx, {
-        type: 'radar',
-        data: data,
-        options: options
-    });
-}
 
 // Fonction pour afficher ou masquer le radar chart
 function toggleChart(chartType) {
