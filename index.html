@@ -31,16 +31,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Qui suis-je ?</a>
+                            <a class="nav-link" href="#accueil">Qui suis-je ?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#competences">Compétences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#interets">Centre d'intérets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -315,12 +318,66 @@
             <div class="container">
                 <h2 class="mb-0">Mes compétences</h2>
                 <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
-                <button id="toggleButton" class="btn btn-info" onclick="toggleChart('competences')">Voir en Progress Bar</button>
+                <button id="toggleButton" class="btn btn-info" onclick="toggleChart('competences')">Voir en Progress
+                    Bar</button>
                 <canvas id="radarChart"></canvas>
             </div>
         </section>
+        <!-- Mon Portfolio -->
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <h2 class="mb-0">Mon portfolio</h2>
+                <h3 class="fw-light fs-5">Projets personnels et professionnels</h3>
+                <div class="row gy-4 gy-md-0 mt-4">
+                    <!-- Projet 1 -->
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="/img/plante.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 1</h5>
+                                <p class="card-text">Système d'arrosage automatique</p>
+                                <a class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="/img/journal.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 2</h5>
+                                <p class="card-text">Journal intime</p>
+                                <a class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="/img/messagerie.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 3</h5>
+                                <p class="card-text">Messagerie</p>
+                                <a class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="/img/petcare.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet 4</h5>
+                                <p class="card-text">Petcare</p>
+                                <a class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Mes centres d'intérêts -->
-        <section id="intérêts" class="py-5">
+        <section id="interets" class="py-5">
             <div class="container">
                 <h2 class="mb-0">Mes centres d'intérêts</h2>
                 <div class="row gy-4 mt-4">
@@ -337,6 +394,21 @@
                         </div>
                     </div>
                     <div class="col-3">
+                        <div class="bg-secondary h-100 w-100 py-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-0">Mes contacts</h2>
+                <div class="row gy-4 mt-5">
+                    <div class="col-12 col-md-5">
+                        <img src="/img/contact.jpg" alt="contact" width="100%">
+                    </div>
+                    <div class="col-12 offset-md-1 col-md-6">
                         <div class="bg-secondary h-100 w-100 py-5">
                         </div>
                     </div>
