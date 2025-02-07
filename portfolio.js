@@ -96,3 +96,4 @@ function toggleChart(chartType) {
 
 // L'appel initial pour afficher les progress bars par défaut
 toggleChart('progress');
+
