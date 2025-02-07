@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: column;
     min-height: 400px; /* Assure une hauteur minimale pour chaque carte */
+    position: relative;
+    overflow: hidden;
 }
 
 #portfolio .card-body {
@@ -28,4 +30,44 @@
         /* Pour les petits écrans, assure que chaque carte occupe toute la largeur */
         display: block;
     }
+}
+
+
+/* Cache le texte par défaut */
+.card-description {
+    display: none;
+    position: absolute;
+    top: 50%; /* Positionne à 50% de la hauteur de la carte */
+    left: 50%; /* Positionne à 50% de la largeur de la carte */
+    transform: translate(-50%, -50%); /* Centrage absolu par rapport aux coordonnées */
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;
+    padding: 20px 30px; /* Espacement autour du texte */
+    border-radius: 15px; /* Coins plus arrondis */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 1.2rem; /* Augmente la taille du texte */
+    font-weight: 600; /* Police plus épaisse */
+    max-width: 80%; /* Limite la largeur à 80% de la carte */
+    max-height: 100%; /* Permet au texte de s'étendre sur toute la hauteur disponible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée douce */
+    transition: opacity 0.3s ease; /* Transition douce pour l'apparition */
+}
+
+/* Applique un effet de transparence à l'image au survol */
+.card:hover .card-img-top {
+    opacity: 0.3; /* L'image devient presque transparente */
+    transition: opacity 0.3s ease; /* Transition douce de l'opacité */
+}
+
+/* Affiche le texte au survol */
+.card:hover .card-description {
+    display: block; /* Affiche le texte lorsqu'on survole la carte */
+    opacity: 1; /* Assure que le texte est bien visible */
+    transform: translate(-50%, -50%); /* Garantit que le texte reste centré */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Effet doux pour l'apparition */
+}
+
+/* Effet de flou sur l'image lorsqu'elle est transparente */
+.card:hover .card-img-top {
+    filter: blur(3px); /* Un léger flou sur l'image pour améliorer l'effet */
 }
