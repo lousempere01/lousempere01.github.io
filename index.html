@@ -39,7 +39,13 @@
                             <a class="nav-link" href="#competences">Compétences</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#formations">Formations</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiences">Expériences</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#interets">Centre d'intérets</a>
@@ -76,257 +82,267 @@
             </div>
         </section>
         <!-- Mes compétences -->
-        <section id="competences" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="mb-0">Mes compétences</h2>
-                <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
-                <!-- Bouton pour basculer Progress bar / Radar Chart -->
-                <div class="text-center mb-4">
-                    <button id="toggleButton" class="btn btn-info" onclick="toggleChart('radar')">Voir en Radar
-                        Chart</button>
-                </div>
-                <!-- Développement et Langage de programmation côte à côte -->
-                <div class="row gy-4 mt-5">
-                    <!-- Développement web  -->
-                    <div class="col-12 col-md-6">
-                        <!--Progress bar -->
-                        <!-- HTML -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-8 col-sm-6 col-lg-4 col-xl-3"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-html5 fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">HTML</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CSS -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-8 col-sm-6 col-lg-4 col-xl-3"><!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-css3-alt fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">CSS</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Bootstrap -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-8 col-sm-6 col-lg-4 col-xl-3"><!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-bootstrap fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">Bootstrap</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- JS -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-8 col-sm-6 col-lg-4 col-xl-3"><!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-js fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">Javascript</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%"
-                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- React -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-8 col-sm-6 col-lg-4 col-xl-3"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-react fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">React</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Angular -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-8 col-sm-6 col-lg-4 col-xl-3"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-angular fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">Angular</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <section>
+            <section id="competences" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="mb-0">Mes compétences</h2>
+                    <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
+                    <!-- Bouton pour basculer Progress bar / Radar Chart -->
+                    <div class="text-center mb-4">
+                        <button id="toggleButton" class="btn btn-info" onclick="toggleChart('radar')">Voir en Radar
+                            Chart</button>
                     </div>
-
-                    <!-- Langage de programmation -->
-                    <div class="col-12 col-md-6">
-                        <!--Progress bar -->
-                        <!-- Swift -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-swift fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">Swift</p> <!-- texte -->
+                    <!-- Développement et Langage de programmation côte à côte -->
+                    <div class="row gy-4 mt-5">
+                        <!-- Développement web  -->
+                        <div class="col-12 col-md-6">
+                            <!--Progress bar -->
+                            <!-- HTML -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-8 col-sm-6 col-lg-4 col-xl-3"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-html5 fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">HTML</p> <!-- texte -->
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 35%"
-                                            aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- R -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <p class="fw-bold m-0">R</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 55%"
-                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Python -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-python fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">Python</p> <!-- texte -->
+                            <!-- CSS -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-8 col-sm-6 col-lg-4 col-xl-3"><!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-css3-alt fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">CSS</p> <!-- texte -->
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- SQL -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <p class="fw-bold m-0">SQL</p> <!-- texte -->
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Java -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <i class="fab fa-java fa-2x me-3 text-primary"></i> <!-- icone -->
-                                        <p class="fw-bold m-0">Java</p> <!-- texte -->
+                            <!-- Bootstrap -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-8 col-sm-6 col-lg-4 col-xl-3"><!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-bootstrap fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">Bootstrap</p> <!-- texte -->
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Smalltalk -->
-                        <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
-                            <div class="row align-items-center"> <!-- alignement vertical -->
-                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
-                                    <div class="d-flex align-items-center"> <!-- alignement horizontal -->
-                                        <p class="fw-bold m-0">Smalltalk</p> <!-- texte -->
+                            <!-- JS -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-8 col-sm-6 col-lg-4 col-xl-3"><!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-js fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">Javascript</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <!-- barre de progression -->
+                            </div>
+                            <!-- React -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-8 col-sm-6 col-lg-4 col-xl-3"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-react fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">React</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Angular -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-8 col-sm-6 col-lg-4 col-xl-3"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-angular fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">Angular</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Langage de programmation -->
+                        <div class="col-12 col-md-6">
+                            <!--Progress bar -->
+                            <!-- Swift -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-swift fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">Swift</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 35%"
+                                                aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- R -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <p class="fw-bold m-0">R</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 55%"
+                                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Python -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-python fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">Python</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SQL -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <p class="fw-bold m-0">SQL</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%"
+                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Java -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <i class="fab fa-java fa-2x me-3 text-primary"></i> <!-- icone -->
+                                            <p class="fw-bold m-0">Java</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Smalltalk -->
+                            <div class="mb-3 p-3 bg-white"> <!-- marge, padding, couleur de fond -->
+                                <div class="row align-items-center"> <!-- alignement vertical -->
+                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2"> <!-- responsive -->
+                                        <div class="d-flex align-items-center"> <!-- alignement horizontal -->
+                                            <p class="fw-bold m-0">Smalltalk</p> <!-- texte -->
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <!-- barre de progression -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-            </div>
+                </div>
+                </div>
+            </section>
+            <!-- Radar Chart -->
+            <section id="radar" class="py-5 bg-light" style="display: none;">
+                <div class="container">
+                    <h2 class="mb-0">Mes compétences</h2>
+                    <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
+                    <button id="toggleButton" class="btn btn-info" onclick="toggleChart('competences')">Voir en Progress
+                        Bar</button>
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </section>
         </section>
-        <!-- Radar Chart -->
-        <section id="radar" class="py-5 bg-light" style="display: none;">
+        <!-- Mes formations -->
+        <section id="formations" class="py-5">
             <div class="container">
-                <h2 class="mb-0">Mes compétences</h2>
-                <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
-                <button id="toggleButton" class="btn btn-info" onclick="toggleChart('competences')">Voir en Progress
-                    Bar</button>
-                <canvas id="radarChart"></canvas>
+                <h2 class="mb-0">Mon parcours scolaire</h2>
+                <div class="row gy-4 gy-md-0 mt-4">
+                </div>
             </div>
         </section>
         <!-- Mon Portfolio -->
-        <section id="portfolio" class="py-5">
+        <section id="portfolio" class="py-5 bg-light">
             <div class="container">
                 <h2 class="mb-0">Mon portfolio</h2>
                 <h3 class="fw-light fs-5">Projets personnels et professionnels</h3>
@@ -404,8 +420,17 @@
                 </div>
             </div>
         </section>
+        <!-- Mes expériences -->
+        <section id="experiences" class="py-5">
+            <div class="container">
+                <h2 class="mb-0">Mes expériences</h2>
+                <h3 class="fw-light fs-5">Expériences professionnelles et personnelles</h3>
+                <div class="row gy-4 gy-md-0 mt-4">
+                </div>
+            </div>
+        </section>
         <!-- Mes centres d'intérêts -->
-        <section id="interets" class="py-5">
+        <section id="interets" class="py-5 bg-light">
             <div class="container">
                 <h2 class="mb-0">Mes centres d'intérêts</h2>
                 <div class="row gy-4 mt-4">
@@ -429,7 +454,7 @@
             </div>
         </section>
         <!-- Contact -->
-        <section id="contact" class="py-5 bg-light">
+        <section id="contact" class="py-5">
             <div class="container">
                 <h2 class="mb-0">Mes contacts</h2>
                 <div class="row gy-4 mt-5">

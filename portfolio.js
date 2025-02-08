@@ -38,8 +38,8 @@ const data = {
     datasets: [{
         label: "Mes compétences",
         data: [80, 80, 70, 60, 40, 40, 20, 50, 60, 75, 60, 50], // Valeurs de compétences
-        backgroundColor: 'rgba(63, 81, 181, 0.2)',
-        borderColor: 'rgba(63, 81, 181, 1)',
+        backgroundColor: 'rgba(150, 205, 227, 0.2)',
+        borderColor: 'rgb(79, 211, 223)',
         borderWidth: 1
     }]
 };

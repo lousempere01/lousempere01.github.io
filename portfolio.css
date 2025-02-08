@@ -1,6 +1,6 @@
 #radarChart {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     display: block;
     margin: auto; /* Centrer */
 }
@@ -40,16 +40,14 @@
     top: 50%; /* Positionne à 50% de la hauteur de la carte */
     left: 50%; /* Positionne à 50% de la largeur de la carte */
     transform: translate(-50%, -50%); /* Centrage absolu par rapport aux coordonnées */
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-    color: white;
+    background-color: rgba(106, 220, 238, 0.6); /* Fond semi-transparent */
+    color: black; /* Couleur du texte */
     padding: 20px 30px; /* Espacement autour du texte */
     border-radius: 15px; /* Coins plus arrondis */
     text-align: center; /* Centre le texte horizontalement */
     font-size: 1.2rem; /* Augmente la taille du texte */
     font-weight: 600; /* Police plus épaisse */
-    max-width: 80%; /* Limite la largeur à 80% de la carte */
     max-height: 100%; /* Permet au texte de s'étendre sur toute la hauteur disponible */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée douce */
     transition: opacity 0.3s ease; /* Transition douce pour l'apparition */
 }
 
