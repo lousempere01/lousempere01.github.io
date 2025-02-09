@@ -97,3 +97,26 @@ function toggleChart(chartType) {
 // L'appel initial pour afficher les progress bars par défaut
 toggleChart('progress');
 
+
+// Initialisation du SDK EmailJS
+(function() {
+    emailjs.init("7CJmmri8Va1zI95M7");
+})();
+
+// Gestionnaire d'évenement pour le formulaire de contact
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // empêche le rechargement de la page
+
+        const serviceID = 'service_qf7npwb';
+        const templateID = 'contact_form';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                alert('Votre message a été envoyé avec succès !');
+                this.reset(); // Réinitialise le formulaire
+            }, (err) => {
+                alert('Une erreur est survenue lors de l\'envoi de votre message : ' + JSON.stringify(err));
+            });
+    });
+});
