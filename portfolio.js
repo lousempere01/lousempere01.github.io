@@ -1,3 +1,7 @@
+// By Lou SEMPERE
+
+
+// RADAR CHART
 function initRadarChart() {
     const ctx = document.getElementById('radarChart').getContext('2d');
 
@@ -98,6 +102,7 @@ function toggleChart(chartType) {
 toggleChart('progress');
 
 
+// EMAIL JS
 // Initialisation du SDK EmailJS
 (function () {
     emailjs.init("7CJmmri8Va1zI95M7");
@@ -121,7 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Leafmap
+
+// LEAFMAP
 // Initialisation de la carte
 var map = L.map('map').setView([48.8566, 2.3522], 5); // Coordonnées de Paris avec un zoom de 5
 
