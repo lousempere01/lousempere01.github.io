@@ -162,6 +162,8 @@ var lieux = [
     { nom: "Barcelone, Espagne", coordonnees: [41.3888, 2.159] },
     { nom: "Londres, Royaume-Uni", coordonnees: [51.5074, -0.1278] },
     { nom: "Venise, Italie", coordonnees: [45.434, 12.3388] },
+    { nom: "Rome, Italie", coordonnees: [41.9028, 12.4964] },
+    { nom: "Marrakech, Maroc", coordonnees: [31.6295, -7.9811] }
 ];
 
 lieux.forEach(function (lieu) {
