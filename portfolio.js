@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// LEAFMAP
+// LEAFLET
 // Initialisation de la carte
 var map = L.map("map").setView([48.8566, 2.3522], 5); // Coordonnées de Paris avec un zoom de 5
 
