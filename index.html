@@ -21,6 +21,16 @@
     <link rel="stylesheet" href="portfolio.css">
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Inclusion de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Inclusion du JS de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Inclusion du JS de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Inclusion du CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Inclusion du CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
 </head>
@@ -450,28 +460,51 @@
                 <div class="row">
                     <div class="col-lg-4 text-center">
                         <div class="service-box mt-5 mx-auto">
-                            <i class="fas fa-4x fa-book text-info mb-3 sr-icon-1"
-                                style="visibility: visible;"></i>
+                            <i class="fas fa-4x fa-book text-info mb-3 sr-icon-1" style="visibility: visible;"></i>
                             <h3 class="mb-3">Lecture</h3>
                             <p class="text-muted mb-0">
+                                J'ai toujours été passionnée par la lecture, j'aime découvrir de nouveaux univers et
+                                m'échapper du monde réel.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="service-box mt-5 mx-auto">
-                            <i class="fas fa-4x fa-globe text-info mb-3 sr-icon-2"
-                                style="visibility: visible;"></i>
+                            <i class="fas fa-4x fa-globe text-info mb-3 sr-icon-2" style="visibility: visible;"></i>
                             <h3 class="mb-3">Voyages</h3>
                             <p class="text-muted mb-0">
+                                J'aime voyager et découvrir de nouvelles cultures, de nouveaux paysages et de nouvelles
+                                personnes.
+                                <a href="map.html" data-toggle="modal" data-target="#mapModal">Cliquez pour voir où j'ai
+                                    voyagé.</a>
                             </p>
+                        </div>
+                    </div>
+                    <!-- Fenêtre modale -->
+                    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="mapModalLabel">Mes Voyages</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Conteneur de la carte -->
+                                    <div id="map"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="service-box mt-5 mx-auto">
-                            <i class="fas fa-4x fa-dice text-info mb-3 sr-icon-3"
-                                style="visibility: visible;"></i>
+                            <i class="fas fa-4x fa-dice text-info mb-3 sr-icon-3" style="visibility: visible;"></i>
                             <h3 class="mb-3">Jeux de réflexion</h3>
                             <p class="text-muted mb-0">
+                                J'aime les jeux de réflexion tel que les sudokus, les mots melés et les puzzles, ils me
+                                permettent de me détendre et de me concentrer.
                             </p>
                         </div>
                     </div>

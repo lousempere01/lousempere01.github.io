@@ -99,13 +99,13 @@ toggleChart('progress');
 
 
 // Initialisation du SDK EmailJS
-(function() {
+(function () {
     emailjs.init("7CJmmri8Va1zI95M7");
 })();
 
 // Gestionnaire d'évenement pour le formulaire de contact
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('form').addEventListener('submit', function(event) {
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault(); // empêche le rechargement de la page
 
         const serviceID = 'service_qf7npwb';
@@ -119,4 +119,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Une erreur est survenue lors de l\'envoi de votre message : ' + JSON.stringify(err));
             });
     });
+});
+
+// Leafmap
+// Initialisation de la carte
+var map = L.map('map').setView([48.8566, 2.3522], 5); // Coordonnées de Paris avec un zoom de 5
+
+// Ajout d'une couche de tuiles OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Ajout de marqueurs pour chaque lieu visité
+var lieux = [
+    { nom: "Djerba, Tunisie", coordonnees: [33.8, 10.9] },
+    { nom: "Martinique", coordonnees: [14.6667, -61.0000] },
+    { nom: "La Réunion", coordonnees: [-21.1151, 55.5364] },
+    { nom: "Marie-Galante, Guadeloupe", coordonnees: [15.9333, -61.2667] },
+    { nom: "Majorque, Espagne", coordonnees: [39.6953, 3.0176] },
+    { nom: "Minorque, Espagne", coordonnees: [39.9496, 4.1103] },
+    { nom: "Crète, Grèce", coordonnees: [35.2401, 24.8093] },
+    { nom: "Lanzarote, Espagne", coordonnees: [29.0469, -13.5899] },
+    { nom: "Lisbonne, Portugal", coordonnees: [38.7167, -9.1333] },
+    { nom: "Barcelone, Espagne", coordonnees: [41.3888, 2.1590] },
+    { nom: "Londres, Royaume-Uni", coordonnees: [51.5074, -0.1278] },
+    { nom: "Venise, Italie", coordonnees: [45.4340, 12.3388] }
+];
+
+lieux.forEach(function (lieu) {
+    L.marker(lieu.coordonnees).addTo(map)
+        .bindPopup(lieu.nom);
+
+});
+
+// Fonction pour redimensionner la carte lorsque la modale est affichée
+$('#mapModal').on('shown.bs.modal', function () {
+    setTimeout(function () {
+        map.invalidateSize();
+    }, 10);
 });

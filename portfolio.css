@@ -69,3 +69,8 @@
 .card:hover .card-img-top {
     filter: blur(3px); /* Un léger flou sur l'image pour améliorer l'effet */
 }
+
+#map {
+    width: 100%;
+    height: 500px;
+}
