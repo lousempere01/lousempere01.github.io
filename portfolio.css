@@ -1,6 +1,18 @@
 /* By Lou SEMPERE */
 
 
+
+.img-circle {
+    width: 650px; /* Ajuste la taille selon ton besoin */
+    height: 650px;
+    border-radius: 50%; /* Rend l'image complètement ronde */
+    object-fit: cover; /* Garde les proportions et évite la déformation */
+    display: block;
+    margin: auto; /* Centre l'image */
+    border: 4px solid #17a2b8; /* Ajoute une bordure colorée */
+}
+
+
 #radarChart {
     width: 600px;
     height: 600px;
