@@ -107,7 +107,7 @@
                 <div class="container">
                     <h2 class="mb-0">Mes compétences</h2>
                     <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
-                    <!-- Bouton pour basculer Progress bar / Radar Chart -->
+                    <!-- Bouton pour basculer Radar Chart -->
                     <div class="text-center mb-4">
                         <button id="toggleButton" class="btn btn-info" onclick="toggleChart('radar')">Voir en Radar
                             Chart</button>
@@ -345,8 +345,11 @@
                 <div class="container">
                     <h2 class="mb-0">Mes compétences</h2>
                     <h3 class="fw-light fs-5">Développement web et Langage de programmation</h3>
-                    <button id="toggleButton" class="btn btn-info" onclick="toggleChart('competences')">Voir en Progress
-                        Bar</button>
+                    <!-- Bouton pour basculer Progress Bar -->
+                    <div class="text-center mb-4">
+                        <button id="toggleButton" class="btn btn-info" onclick="toggleChart('competences')">Voir en Progress
+                            Bar</button>
+                    </div>
                     <canvas id="radarChart"></canvas>
                 </div>
             </section>
