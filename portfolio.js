@@ -50,7 +50,7 @@ const data = {
     datasets: [
         {
             label: "Mes compétences",
-            data: [80, 80, 70, 60, 40, 40, 20, 50, 60, 75, 60, 50], // Valeurs de compétences
+            data: [80, 80, 60, 70, 30, 40, 20, 60, 70, 75, 50, 50], // Valeurs de compétences
             backgroundColor: "rgba(150, 205, 227, 0.2)",
             borderColor: "rgb(79, 211, 223)",
             borderWidth: 1,
